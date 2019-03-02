@@ -17,12 +17,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		AActor *Objeto;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		float MaxScale; 
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	    float MinScale;
-
+		float Tempo;
 	// Sets default values for this component's properties
 	UAumDimObj();
 

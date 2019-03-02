@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "AumDimObj.h"
-
+#include "Engine/World.h"
 
 // Sets default values for this component's properties
 UAumDimObj::UAumDimObj()
@@ -19,8 +19,8 @@ void UAumDimObj::BeginPlay()
 {
 	Super::BeginPlay();
 	Objeto = GetOwner();
-	// ...
-	
+	MaxScale = 4.f;
+	MinScale = 1.f;
 }
 
 
@@ -28,7 +28,5 @@ void UAumDimObj::BeginPlay()
 void UAumDimObj::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-
-	// ...
 }
 
